@@ -1,0 +1,13 @@
+<p>FAKERY PHOTO</p>
+<h1>FAKERY GALLERY TEST</h1>
+<br>
+<hr>
+
+
+<div *ngFor="let photo of photos">
+    <div class="thumbnail">
+        <img src={{photo.photo_url}} alt={{photo.caption}} width="20%">
+        <h3>{{photo.caption}}</h3>
+        <h3>{{photo.photo_url}}</h3>
+    </div>
+</div>

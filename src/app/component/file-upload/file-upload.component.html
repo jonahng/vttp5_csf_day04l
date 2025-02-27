@@ -1,0 +1,17 @@
+<p>file-upload works!</p>
+
+<input type="file" (change)="handleFileUpload($event)" #fileUpload>
+
+<div *ngIf="selectedFile">
+    <section class="file-details">
+        <h3>Selected File</h3>
+        <br>
+        <ul>
+        <li><strong>FILENAME:</strong>{{selectedFile?.name}}</li>
+        <li><strong>TYPE:</strong>{{selectedFile?.type}}</li>
+        <li><strong>size:</strong>{{selectedFile?.size}}</li>
+        </ul>
+
+    </section>
+    <button (click)="uploadFile()">UPLOAD</button>
+</div>
